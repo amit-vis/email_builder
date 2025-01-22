@@ -9,7 +9,7 @@ const TemplatePreview = () => {
   useEffect(() => {
     const fetchTemplate = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/renderAndDownloadTemplate/${id}`);
+        const response = await fetch(`https://email-builder-npyp.onrender.com/api/renderAndDownloadTemplate/${id}`);
         const html = await response.text();
         setTemplate(html);
       } catch (error) {

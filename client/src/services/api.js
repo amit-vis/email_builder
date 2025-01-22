@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:5000/api"
+const API_BASE_URL = "https://email-builder-npyp.onrender.com/api"
 
 export const getLayout = async () => {
   const response = await fetch(`${API_BASE_URL}/getEmailLayout`)

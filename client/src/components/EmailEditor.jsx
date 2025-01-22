@@ -84,7 +84,7 @@ const EmailEditor = () => {
            
             <div dangerouslySetInnerHTML={{ __html: template.content }} />
             {template.imageUrl && (
-              <img src={`http://localhost:5000${template.imageUrl}` || "/placeholder.svg"} alt="Email content" className="my-4 max-w-full" />
+              <img src={`https://email-builder-npyp.onrender.com${template.imageUrl}` || "/placeholder.svg"} alt="Email content" className="my-4 max-w-full" />
             )}
           </div>
         </div>

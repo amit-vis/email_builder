@@ -8,7 +8,7 @@ const TemplateList = () => {
   useEffect(() => {
     const fetchTemplates = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/templates")
+        const response = await fetch("https://email-builder-npyp.onrender.com/api/templates")
         const data = await response.json()
         setTemplates(data)
       } catch (error) {

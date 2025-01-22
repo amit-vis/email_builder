@@ -51,7 +51,7 @@ exports.renderAndDownloadTemplate = async (req, res) => {
     html = html
     .replace(/{{title}}/g, template.title)
     .replace(/{{content}}/g, template.content)
-    .replace(/{{imageUrl}}/g, template.imageUrl ? `http://localhost:5000${template.imageUrl}` : "");
+    .replace(/{{imageUrl}}/g, template.imageUrl ? `https://email-builder-npyp.onrender.com${template.imageUrl}` : "");
 
     res.send(html)
   } catch (error) {
